@@ -1,0 +1,75 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{epsfig}
+\usepackage{subcaption}
+\usepackage[most]{tcolorbox}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+
+\makeatletter
+\newcommand{\linebreakand}{%
+    \end{@IEEEauthorhalign}
+    \hfill\mbox{}\par
+    \mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+
+\begin{document}
+\title{Klasifikasi Kanker Payudara Menggunakan Algoritma Naive Bayes}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Dzaki Moch Fikri Aliffa}
+\IEEEauthorblockA{\textit{Informatics Department}\\
+\textit{UIN Sunan Gunung Djati Bandung}\\
+Jawa Barat, Indonesia\\
+dzakialiffa@gmail.com}
+\and
+
+\IEEEauthorblockN{2\textsuperscript{nd} Fany Risti Fathonah}
+\IEEEauthorblockA{\textit{Informatics Department}\\
+\textit{UIN Sunan Gunung Djati Bandung}\\
+Jawa Barat, Indonesia\\
+.com}
+\and
+}
+\maketitle
+
+\begin{abstract}
+Kanker payudara adalah salah satu jenis kanker yang paling umum di kalangan wanita. Deteksi dini kanker payudara dapat membantu meningkatkan peluang kesembuhan pasien. Dalam penelitian ini, kami menggunakan algoritma Naive Bayes untuk mengklasifikasikan kanker payudara berdasarkan fitur-fitur medis.
+\end{abstract}
+
+\begin{IEEEkeywords}
+kanker payudara, deteksi dini, algoritma Naive Bayes, klasifikasi
+\end{IEEEkeywords}
+
+\section{Introduction} \label{sec:introduction}
+Kanker payudara adalah salah satu masalah kesehatan yang serius di seluruh dunia. Deteksi dini kanker payudara dapat membantu meningkatkan peluang kesembuhan pasien dan mengurangi tingkat kematian. Dalam penelitian ini, kami bertujuan untuk mengembangkan sebuah model klasifikasi menggunakan algoritma Naive Bayes untuk membantu dalam deteksi dini kanker payudara.
+
+\section{Related Work} \label{sec:related-work}
+Banyak penelitian sebelumnya telah dilakukan dalam bidang klasifikasi kanker payudara. Beberapa penelitian menggunakan metode Naive Bayes untuk mengklasifikasikan kanker payudara. Misalnya, penelitian oleh Smith et al. \cite{smith2017} menunjukkan bahwa Naive Bayes dapat memberikan hasil yang akurat dalam mengklasifikasikan kanker payudara berdasarkan fitur-fitur medis.
+
+\section{Methodology} \label{sec:methodology}
+Algoritma Naive Bayes adalah metode klasifikasi yang berdasarkan pada teorema Bayes dengan asumsi independensi kondisional antara fitur-fitur. Untuk mengklasifikasikan kanker payudara, kita perlu menghitung probabilitas posterior dari setiap kelas berdasarkan fitur-fitur medis yang diberikan. Rumus Naive Bayes untuk menghitung probabilitas posterior adalah:
+
+\begin{equation}
+P(C_k|X) = \frac{P(X|C_k) \cdot P(C_k)}{P(X)}
+\end{equation}
+
+di mana $P(C_k|X)$ adalah probabilitas posterior kelas $C_k$ given fitur $X$, $P(X|C_k)$ adalah likelihood dari fitur $X$ given kelas $C_k$, $P(C_k)$ adalah probabilitas prior kelas $C_k$, dan $P(X)$ adalah probabilitas margin dari fitur $X$. Dalam klasifikasi kanker payudara, $C_k$ mewakili kelas "kanker" atau "non-kanker", dan $X$ mewakili fitur-fitur medis.
+
+\section{Results and Discussion} \label{sec:result}
+Kami melakukan eksperimen menggunakan dataset kanker payudara yang terdiri dari fitur-fitur medis seperti usia, ukuran tumor, dan sebagainya. Hasil yang diperoleh menunjukkan bahwa model klasifikasi Naive Bayes kami mampu mengklasifikasikan kanker payudara dengan akurasi yang tinggi.
+
+\section{Conclusion} \label{sec:conclusion}
+Dalam penelitian ini, kami menggunakan algoritma Naive Bayes untuk mengklasifikasikan kanker payudara berdasarkan fitur-fitur medis. Hasil eksperimen menunjukkan bahwa model klasifikasi Naive Bayes kami mampu memberikan hasil yang akurat dalam mengklasifikasikan kanker payudara. Penelitian ini dapat menjadi dasar untuk pengembangan sistem deteksi dini kanker payudara yang lebih canggih dan efisien di masa depan.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
